@@ -1,0 +1,952 @@
+{% load static %}
+{% static "images" as baseUrl %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     
+        <meta charset="utf-8">
+        <title>Aiotel</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+     
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        
+
+        <!-- Template Stylesheet -->
+        
+        <link href="{% static 'css/dropdown.css' %}" rel="stylesheet">
+        <style>
+             .botz {
+                                float: right;
+                                width: 300px;
+                               
+                                padding: 10px;
+                 margin: auto;
+                 width: 50%;
+                 padding: 5px;
+                 text-align: center;}
+                 .botbuttonz{
+          float: right;
+          padding-left: 750px;
+          
+      }
+             html {
+                    background-color: #ffffff;
+}
+            body {margin: 0;}
+
+            
+       
+    ul.topnavz {
+        list-style-type: none;
+        margin: 0;
+        padding: 20px;
+        overflow: hidden;
+        background-color: #ff008c;
+            
+    
+      }
+      
+      ul.topnavz li {float: center;}
+      
+      ul.topnavz li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 0px 10px;
+        text-decoration: none;
+      }
+      
+      ul.topnavz li a:hover:not(.active) {color: #000033;}
+                                   
+      
+      ul.topnavz li a.active {background-color: #000033;}
+                                    
+      
+      ul.topnavz li.right {float: right;}
+      
+      @media screen and (max-width: 600px) {
+        ul.topnavz li.right, 
+        ul.topnavz li {float: none;}
+      }
+      .noborderz {
+                 margin: auto;
+                 width: 50%;
+                 padding-top: 10px;
+                 text-align: center;
+      }
+      .headingz {
+                font-family: sans-serif;
+                 margin: auto;
+                 width: 50%;
+                 padding-top: 10px;
+                 text-align: center;
+      }
+      .imgcenterz {
+                 margin: auto;
+                 width: 50%;
+                 padding-top: 70px;
+                 text-align: center;
+      }
+      .botz {
+                                float: right;
+                                width: 300px;
+                               
+                                padding: 10px;
+                 margin: auto;
+                 width: 50%;
+                 padding: 5px;
+                 text-align: center;
+      }
+      .dropbtnz {
+                            background-color: #000033;
+                            color: white;
+                            padding: 16px;
+                            font-size: 16px;
+                            border: none;
+                            cursor: pointer;
+                            }
+
+                            .dropdownz {
+                            position: relative;
+                            display: inline-block;
+                            }
+
+                            .dropdown-contentz {
+                            display: none;
+                            position: absolute;
+                            background-color: #cecef5;
+                            min-width: 160px;
+                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                            z-index: 1;
+                            }
+
+                            .dropdown-contentz a {
+                            color: #ff008c;
+                            padding: 12px 16px;
+                            text-decoration: none;
+                            display: block;
+                            }
+
+                            .dropdown-contentz a:hover {background-color: #f1f1f1}
+
+                            .dropdownz:hover .dropdown-content {
+                            display: block;
+                            }
+
+                            .dropdownz:hover .dropbtn {
+                            background-color: #000033;
+                            }
+                            .righttz {
+                                float: left;
+                                width: 300px;
+                                padding-top: 80px;
+                                padding-left: 80px;
+                                }
+                                .camz{
+          
+          padding: 50px;
+          padding-left: 100px;
+      }
+      .imgborderz{
+        border: 5px solid #555;
+      }
+      .typewriter h1 {
+  color: #fff;
+  font-family: sans-serif;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
+        </style>
+
+         
+    </head>
+    <body style="background-color: white;">
+      <ul class="topnavz">
+        
+        <div class="headingz">
+
+        <b><li><h1><a href ="#">CUSTOMER PAGE</a></li></h1></b>
+        
+        
+      </div>
+       </ul>
+      
+                  </div>
+                <a href="{% url 'base' %}"><h1>BASE.HTML</h1></a>
+                  
+                  <style>
+                    #data{
+                    display : none;
+                    }
+                    </style>
+                    
+                    
+                    
+                  
+                    <script>
+
+                    function showDiff(x){
+                        x.src="{% static 'grandpa.png' %}";
+                        
+                            x.style.height = "450px";
+                            x.style.width = "350px";
+                            }
+                            function normalimg(x) {
+                            x.src="{% static 'grandpacropped.jpg' %}";
+                            x.style.height = "400px";
+                            x.style.width = "400px";
+                             }
+                    function showDiff2(x){
+                        x.src="{% static 'women.png' %}";
+                        
+                            x.style.height = "450px";
+                            x.style.width = "350px";
+                            }
+                            function normalimg2(x) {
+                            x.src="{% static 'womencropped.jpg' %}";
+                            x.style.height = "400px";
+                            x.style.width = "400px";
+                             }
+                    function showDiff3(x){
+                        x.src="{% static 'man.png' %}";
+                        
+                            x.style.height = "450px";
+                            x.style.width = "350px";
+                            }
+                            function normalimg3(x) {
+                            x.src="{% static 'mancropped.jpg' %}";
+                            x.style.height = "400px";
+                            x.style.width = "350px";
+                             }
+                                                                                
+                    </script>
+                   
+        <!-- Price Start -->
+        <div class="price" id="price">
+          <div class="container">
+              <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                  
+                <h2>SELECT A PLAN</h2>
+              
+            </div>
+              <div class="row">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="price-item featured-item">
+                        <div class="price-header">
+                            <div class="price-title">
+                                <h2>MOBILE PLANS</h2>
+                            </div>
+                            <div class="price-prices">
+                               
+                            </div>
+                        </div>
+                        <div class="price-body">
+                            <div class="price-description">
+                                <ul>
+                                   
+                                    <img src="{% static 'grandpacropped.jpg' %}" height="400px" width="400px" onmouseover="showDiff(this)" onmouseout="normalimg(this)">
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="price-footer">
+                            <div class="price-action">
+                              <button class="btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
+                      <div class="price-item featured-item">
+                          <div class="price-header">
+                              <div class="price-title">
+                                  <h2>MOBILE PLANS</h2>
+                              </div>
+                              <div class="price-prices">
+                                 
+                              </div>
+                          </div>
+                          <div class="price-body">
+                              <div class="price-description">
+                                  <ul>
+                                    <img src="{% static 'womencropped.jpg' %}" height="400px" width="400px" onmouseover="showDiff2(this)" onmouseout="normalimg2(this)">
+                                      
+                              </div>
+                          </div>
+                          <div class="price-footer">
+                              <div class="price-action">
+                                <button class="btn" id="myBtn">Order Now</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="price-item featured-item">
+                        <div class="price-header">
+                            <div class="price-title">
+                                <h2>MOBILE PLANS</h2>
+                            </div>
+                            <div class="price-prices">
+                               
+                            </div>
+                        </div>
+                        <div class="price-body">
+                            <div class="price-description">
+                                <ul>
+                                    <img src="{% static 'mancropped.jpg' %}" height="400px" width="350px" onmouseover="showDiff3(this)" onmouseout="normalimg3(this)">
+                                    
+                            </div>
+                        </div>
+                        <div class="price-footer">
+                            <div class="price-action">
+                              <button class="btn" id="myBtn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+     
+ 
+          <!-- JavaScript Libraries -->
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+          <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+          <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+          <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+          <script src="{% static 'lib/typed/typed.min.js' %}"></script>
+          <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+          <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+          <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+          
+          <!-- Contact Javascript File -->
+          <script src="mail/jqBootstrapValidation.min.js"></script>
+          <script src="mail/contact.js"></script>
+
+            <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+
+
+      <!-- Template Javascript -->
+      <script src="{% static 'js/customerpage.js' %}"></script>
+      
+   
+
+      <!-- Template Stylesheet -->
+      <link href="{% static 'css/customerpage.css' %}" rel="stylesheet">
+    
+    </div>
+ 
+           <div class="mo">
+               <style>
+                   body {font-family:  sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+         
+
+           <!-- Trigger/Open The Modal -->
+      
+           
+           <!-- The Modal -->
+           <div id="myModal" class="modal">
+           
+             <!-- Modal content -->
+             <div class="modal-content">
+               <span class="close">&times;</span>
+               <img src="{% static 'rakutenplans.png' %}">
+             </div>
+             
+           
+           </div>
+        </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+            
+         
+          
+            
+          
+     
+            
+            
+      </body> 
+      <body onload="hideTable();">
+        <div class="leftmenu" >
+            <div>
+        <style scoped>
+                    
+          tr:nth-of-type(odd) {
+          background-color:#ffcce8;
+        
+        }
+        
+         @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');  
+        body {  
+          font-family: sans-serif;  
+          text-align: center;  
+          
+          background-color: white;  
+          font-family: sans-serif;  
+          color: #000033;  
+          overflow-x: hidden;  
+        }  
+        tr:first-child { color: #ff008c; 
+        padding: 20px;
+        }  
+        td:hover {  
+          color: #000033;  
+          font-weight: bold;   
+          transition-delay: 0s;  
+            transition-duration: 0.4s;  
+            transition-property: all;  
+          transition-timing-function: line;  
+        }  
+        h1 {  
+          position: relative; 
+        
+          padding-left: 10px;  
+          margin: 10;  
+          font-family: sans-serif;  
+          font-weight: 400;  
+          font-size: 40px;  
+          color: #000033;  
+          -webkit-transition: all 0.4s ease 0s;  
+          -o-transition: all 0.4s ease 0s;  
+          transition: all 0.4s ease 0s; 
+            
+        }  
+        h1:hover{
+          color: #000033;
+          font-weight: bold;
+        }
+        .table {  
+          width: 90%;
+          margin: 50px;
+          
+         }
+         
+        thead {  
+                th {  
+                  
+                  padding: 20px 20px;  
+                  background: #00adee;  
+                  font-size: 25px;  
+                  text-transform: uppercase;  
+                  vertical-align: top;  
+                  color: #1D4A5A;  
+                  font-weight: normal;  
+                  text-align: left;  
+                }  
+              }  
+              tbody {  
+              
+                tr {  
+                  td {  
+                    padding: 10px;  
+                    background: #f2f2f2;  
+                    font-size: 14px;  
+                  } 
+              }  
+          }  
+        }  
+        .add {  
+          outline: none;  
+          background: none;  
+          border: none;  
+        }  
+        .edit {  
+          outline: none;  
+          background: none;  
+          border: none;  
+        }  
+        .save {  
+          outline: none;  
+          background: none;  
+          border: none;  
+        }  
+        .delete {  
+          outline: none;  
+          background: none;  
+          border: none;  
+        }  
+        .edit {  
+          padding: 5px 10px;  
+          cursor: pointer;  
+        }  
+        .save {  
+          padding: 5px 10px;  
+          cursor: pointer;  
+        }  
+        .delete {  
+          padding: 5px 10px;  
+          cursor: pointer;  
+        }  
+        .add {  
+          float: right;  
+          background: transparent;  
+          border: 1px solid  black;  
+          color: black;  
+          font-size: 13px;  
+          padding: 0;  
+          padding: 3px 5px;  
+          cursor: pointer; 
+        } 
+          &:hover {  
+            background: #ffffff;  
+            color: #00adee;  
+          }  
+         
+        .save {  
+          display: none;  
+          background: #32AD60;  
+          color: #ffffff;  
+          &:hover {  
+            background: darken(#32AD60, 10%);  
+          }  
+        }  
+        .edit {  
+          background: #32AD60;  
+          color: #ffffff;  
+          &:hover {  
+            background: darken(#2199e8, 10%);  
+          }  
+        }  
+        .delete {  
+          background: #ff0e0e;  
+          color: #ffffff;  
+          &:hover {  
+            background: darken(#EC5840, 10%);  
+          }  
+        }  
+        .gap{
+          padding-top: 20px;
+          font-family: sans-serif;
+         
+        
+        }
+        hr{
+          color: #000033;
+        }
+        .color{
+          padding: 10px;
+          color: #000033;
+          font-family: sans-serif;
+          background-color: #ff008c;
+        
+        }
+        .bg{
+          border-radius: 20px 30px 30px 20px;
+          margin: 50px;
+          padding-top: 7px;
+          background-color: #ff008c;
+        
+          text-align: center;
+          width: 90%;
+        }
+            
+        
+              .noborder {
+                         margin: auto;
+                         width: 50%;
+                         padding-top: 10px;
+                         text-align: center;
+              }
+              .spacing{
+                padding-top: -15px;
+              }
+              .space{
+                  padding-left: 50px;
+              }
+              .typewriter h1 {
+                  color: #fff;
+                  font-family: sans-serif;
+                  overflow: hidden; /* Ensures the content is not revealed until the animation */
+                  border-right: .15em solid orange; /* The typwriter cursor */
+                  white-space: nowrap; /* Keeps the content on a single line */
+                  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+                  letter-spacing: .15em; /* Adjust as needed */
+                  animation: 
+                    typing 3.5s steps(30, end),
+                    blink-caret .5s step-end infinite;
+        }
+        
+        /* The typing effect */
+        @keyframes typing {
+          from { width: 0 }
+          to { width: 100% }
+        }
+        
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+          from, to { border-color: transparent }
+          50% { border-color: orange }
+        }
+        
+        </style>
+        
+          
+          <script>  
+        function showTable(){
+        document.getElementById('theTable').style.visibility = "visible";
+        }
+        function hideTable(){
+        document.getElementById('theTable').style.visibility = "hidden";
+        }
+        
+            </script>
+          
+        
+        
+         <!---------------------------------------------- TABLE BODY------------------------------------------------------------------>
+         
+           
+                 <!---------------------------------------------- TABLE JAVASCRIPT------------------------------------------------------------------>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>  
+                <script>  
+                $(document).on('click', '.edit', function() {  
+                  $(this).parent().siblings('td.data').each(function() {  
+                    var content = $(this).html();  
+                    $(this).html('<input value="' + content + '" />');  
+                  });  
+                  $(this).siblings('.save').show();  
+                  $(this).siblings('.delete').hide();  
+                  $(this).hide();  
+                });  
+                $(document).on('click', '.save', function() {  
+                  $('input').each(function() {  
+                    var content = $(this).val();  
+                    $(this).html(content);  
+                    $(this).contents().unwrap();  
+                  });  
+                  $(this).siblings('.edit').show();  
+                  $(this).siblings('.delete').show();  
+                  $(this).hide();  
+                });  
+                $(document).on('click', '.delete', function() {  
+                  $(this).parents('tr').remove();  
+                });  
+                $('.add').click(function() {  
+                  $(this).parents('table').append('<tr><td class="data"></td><td class="data"></td><td class="data"></td><td><button class="save">Save</button><button class="edit">Edit</button> <button class="delete">Delete</button></td></tr>');  
+                });  
+                </script>  
+                
+        </div>  
+          
+          
+          
+          
+       
+         
+                       <style>
+                           body {font-family: Arial, Helvetica, sans-serif;}
+        
+        /* The Modal (background) */
+        .modall {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        
+        /* Modal Content */
+        .modall-content {
+          background-color: #fefefe;
+          margin: auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 50%;
+        }
+        
+        /* The Close Button */
+        .closee {
+          color: #aaaaaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+        
+        .closee:hover,
+        .closee:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        </style>
+        <script>
+          var maxID = 0;
+          function getTemplateRow1() {
+          var x = document.getElementById("templateRow1").cloneNode(true);
+          x.id = "";
+          x.style.display = "";
+          x.innerHTML = x.innerHTML.replace(/{id}/, ++maxID);
+          return x;
+          }
+          function addRow() {
+          var t = document.getElementById("theTable");
+          var rows = t.getElementsByTagName("tr");
+          var r = rows[rows.length - 1];
+          r.parentNode.insertBefore(getTemplateRow1(), r);
+          
+          
+          }
+          </script>
+          <script>
+          var maxID = 0;
+          function getTemplateRow2() {
+          var x = document.getElementById("templateRow2").cloneNode(true);
+          x.id = "";
+          x.style.display = "";
+          x.innerHTML = x.innerHTML.replace(/{id}/, ++maxID);
+          return x;
+          }
+          function addc() {
+          var t = document.getElementById("theTable");
+          var rows = t.getElementsByTagName("tr");
+          var r = rows[rows.length - 1];
+          r.parentNode.insertBefore(getTemplateRow2(), r);
+          
+          
+          }
+          </script>
+          
+          <script>  
+        function showTable(){
+        document.getElementById('theTable').style.visibility = "visible";
+        }
+        function hideTable(){
+        document.getElementById('theTable').style.visibility = "hidden";
+        }
+        
+            </script>
+          
+                 
+        
+                   <!-- Trigger/Open The Modal -->
+              
+                   
+                   <!-- The Modal -->
+                   <div id="cartmodal" class="modall">
+                   
+                     <!-- Modal content -->
+                     <div class="modall-content">
+                       <span class="closee">&times;</span>
+                       <table id="theTable"  class="table data" border="5px solid #000033">  
+                <div class="bg">
+                 <div class="typewriter">
+                  <h1>Product details</h1> 
+                <hr>
+                </div>
+                <div class="spacing">
+                
+                  <thead class="space">  
+                    <tr>  
+                      <th class="color"> Product </th>  
+                      <th class="color"> Quantity </th>  
+                     
+                       
+        
+                    </tr>  
+                  </thead>  
+                  
+                   
+                    <tr id="templateRow1" style="display:none;">  
+                      <td class="data"> 1st Line </td>  
+                      <td class="data"> 1 </td>  
+                       
+                     
+                      <td>  
+                        <button class="save"> Save </button>  
+                        <button class="edit"> Edit </button>  
+                        <button class="delete"> Delete </button>  
+                      </td>  
+                    </tr>  
+              <tr id="templateRow2" style="display:none;">  
+                      <td class="data">2- 5 Lines</td>  
+                      <td class="data"> 1 </td>  
+                       
+                     
+                      <td>  
+                        <button class="save"> Save </button>  
+                        <button class="edit"> Edit </button>  
+                        <button class="delete"> Delete </button>  
+                      </td>  
+                    </tr> 
+                  </tbody> 
+                  <div class="bot">     
+                    <div id="displayIframe"></div> 
+                  </div>
+          
+                </table>  
+                     </div>
+                     
+                   
+                   </div>
+                </div>
+                <script>
+                    // Get the modal
+                    var modall = document.getElementById("cartmodal");
+        
+        // Get the button that opens the modal
+        var btnn = document.getElementsByClassName("cartbtn");
+        
+        // Get the <span> element that closes the modal
+        var spann = document.getElementsByClassName("closee")[0];
+        
+        // When the user clicks the button, open the modal
+        btnn[0].onclick = function() {
+          modall.style.display = "block";
+          showTable();
+          addRow();
+        };
+        
+        btnn[1].onclick = function() {
+        
+          modall.style.display = "block";
+           
+          showTable();
+          addc();
+        };
+        
+        btnn[2].onclick = function() {
+        
+          modall.style.display = "block";
+          showTable();
+          };
+           
+        
+        
+        // When the user clicks on <span> (x), close the modal
+        spann.onclick = function() {
+          modall.style.display = "none";
+        };
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modall) {
+            modall.style.display = "none";
+          }
+        };
+        
+                     
+              
+                
+                 
+                    
+                    // When the user clicks on <span> (x), close the modal
+                    spann.onclick = function() {
+                      modall.style.display = "none";
+                    }
+                    
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                      if (event.target == modall) {
+                        modall.style.display = "none";
+                      }
+                    }
+                    </script>
+      
+
+
+    </body>
+    </html>
